@@ -1,0 +1,190 @@
+/*==================== Extra Small devices ====================*/
+@media only screen and (max-width: 480px) {
+    .nav-search {
+        display: none;
+    }
+
+    .footer-container .footer-top {
+        grid-template-columns: 1fr !important;
+    }
+}
+/*==================== Mobile devices ====================*/
+@media only screen and (max-width: 576px) {
+    :root {
+        /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+        --big-font-size: 3rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 875rem;
+        --small-font-size: .800rem;
+        --smaller-font-size: .750rem;
+
+        /*========== Font weight ==========*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+        --font-bold: 700;
+    }
+
+    .hero-container .hero-content .hero-title .title {
+        line-height: 20px;
+    }
+
+    .hero-container .hero-content .hero-title .title::after {
+        top: -80px;
+        right: -60px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero-container .hero-content {
+        margin-bottom: 2rem;
+    }
+
+    .trending-container {
+        grid-template-columns: 1fr;
+    }
+
+    .trending-img {
+        margin-bottom: 2rem;
+    }
+
+    .popular-item p {
+        display: none;
+    }
+
+    /* FOOTER SECTION */
+    .footer-bottom {
+        font-size: var(--smaller-font-size);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        margin-bottom: 1rem;
+    }
+}
+
+/*==================== iPads, Tablets ====================*/
+@media only screen and (max-width: 768px) {
+
+    .container-padding {
+        padding: 40px;
+    }
+
+    /* HEADER SECTION */
+    .header {
+        bottom: 0;
+        top: initial;
+    }
+
+    .hero-container {
+        padding-top: 5rem;
+    }
+
+    /* NAV */
+    .nav-icon,
+    .nav-close,
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    .nav-logo {
+        font-size: var(--normal-font-size);
+    }
+
+    .nav-menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 5rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .4s;
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+
+    .nav-icon {
+        font-size: 1.2rem;
+    }
+
+    .nav-close {
+        position: absolute;
+        right: 2.3rem;
+        bottom: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--first-color);
+    }
+
+    .nav-close:hover {
+        color: var(--title-color);
+    }
+
+    /* show menu */
+    .show-menu {
+        bottom: 0;
+    }
+
+    /* HERO SECTION */
+    .hero-container {
+        flex-direction: column;
+    }
+
+    /* TRENDING FOOD SECTION  */
+    .trending-img .thumnail-img img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .trending-content .rating {
+        margin-bottom: 1rem;
+    }
+
+    .trending-content .trending-btn {
+        margin-top: 1.5rem;
+    }
+
+    .trending-content .trending-btn i {
+        padding: .15rem 2.5rem;
+    }
+
+    /* POPULAR ITEMS SECTIONS */
+    .popular-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CONTACT SECTION */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER SECTION */
+    .footer-container .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*==================== Medium devices (landscape tablets, 768px and up) ====================*/
+@media only screen and (min-width: 768px) {}
+
+/*==================== Large devices (laptops/desktops, 992px and up) ====================*/
+@media only screen and (min-width: 992px) {}
+
+/*==================== Extra large devices (large laptops and desktops, 1200px and up) ====================*/
+@media only screen and (min-width: 1200px) {}
